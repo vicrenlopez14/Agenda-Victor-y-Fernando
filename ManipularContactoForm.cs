@@ -104,5 +104,16 @@ namespace _2A_Agenda_Victor_Fernando
             mStream.Dispose();
             return bm;
         }
+
+        private void SubirFoto_btn_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog opnfd = new OpenFileDialog();
+            opnfd.Filter = "Image Files (*.jpg;*.jpeg;.*.gif;)|*.jpg;*.jpeg;.*.gif";
+            if (opnfd.ShowDialog() == DialogResult.OK)
+            {
+                Picture_pb.Image = new Bitmap(opnfd.FileName);
+                toManipulate.Foto = File.ReadAllBytes(opnfd.FileName);
+            }
+        }
     }
 }

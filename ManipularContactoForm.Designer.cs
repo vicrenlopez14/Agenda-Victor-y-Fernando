@@ -58,6 +58,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.Picture_pb = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
+            this.SubirFoto_btn = new System.Windows.Forms.Button();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -120,6 +121,7 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel1.Controls.Add(this.SubirFoto_btn, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel13, 0, 0);
@@ -501,6 +503,20 @@
             this.tableLayoutPanel11.Size = new System.Drawing.Size(200, 100);
             this.tableLayoutPanel11.TabIndex = 0;
             // 
+            // SubirFoto_btn
+            // 
+            this.SubirFoto_btn.BackColor = System.Drawing.Color.DarkCyan;
+            this.SubirFoto_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SubirFoto_btn.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SubirFoto_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.SubirFoto_btn.Location = new System.Drawing.Point(3, 363);
+            this.SubirFoto_btn.Name = "SubirFoto_btn";
+            this.SubirFoto_btn.Size = new System.Drawing.Size(154, 84);
+            this.SubirFoto_btn.TabIndex = 6;
+            this.SubirFoto_btn.Text = "Subir foto";
+            this.SubirFoto_btn.UseVisualStyleBackColor = false;
+            this.SubirFoto_btn.Click += new System.EventHandler(this.SubirFoto_btn_Click);
+            // 
             // ManipularContactoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -566,5 +582,6 @@
         private TableLayoutPanel tableLayoutPanel13;
         private Label label6;
         private PictureBox Picture_pb;
+        private Button SubirFoto_btn;
     }
 }
