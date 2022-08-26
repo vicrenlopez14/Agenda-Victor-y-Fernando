@@ -31,12 +31,12 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.Contactos_ListView = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.Seleccionar_btn = new System.Windows.Forms.Button();
             this.Titulo = new System.Windows.Forms.Label();
             this.Agregar_btn = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.No = new System.Windows.Forms.Label();
             this.Buscar_tb = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -74,9 +74,9 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.Controls.Add(this.Seleccionar_btn, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.Titulo, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.Agregar_btn, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.Agregar_btn, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label1, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -85,19 +85,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(976, 73);
             this.tableLayoutPanel2.TabIndex = 0;
-            // 
-            // Seleccionar_btn
-            // 
-            this.Seleccionar_btn.BackColor = System.Drawing.SystemColors.Highlight;
-            this.Seleccionar_btn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Seleccionar_btn.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Seleccionar_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Seleccionar_btn.Location = new System.Drawing.Point(735, 3);
-            this.Seleccionar_btn.Name = "Seleccionar_btn";
-            this.Seleccionar_btn.Size = new System.Drawing.Size(238, 67);
-            this.Seleccionar_btn.TabIndex = 4;
-            this.Seleccionar_btn.Text = "Seleccionar";
-            this.Seleccionar_btn.UseVisualStyleBackColor = false;
             // 
             // Titulo
             // 
@@ -119,7 +106,7 @@
             this.Agregar_btn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Agregar_btn.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Agregar_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Agregar_btn.Location = new System.Drawing.Point(491, 3);
+            this.Agregar_btn.Location = new System.Drawing.Point(735, 3);
             this.Agregar_btn.Name = "Agregar_btn";
             this.Agregar_btn.Size = new System.Drawing.Size(238, 67);
             this.Agregar_btn.TabIndex = 3;
@@ -170,6 +157,17 @@
             this.Buscar_tb.TabIndex = 4;
             this.Buscar_tb.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Location = new System.Drawing.Point(491, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(238, 73);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Da doble clic sobre una tarjeta para editarla.";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Agenda_fm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -196,10 +194,10 @@
         private TableLayoutPanel tableLayoutPanel2;
         private Label Titulo;
         private FlowLayoutPanel Contactos_ListView;
-        private Button Seleccionar_btn;
         private Button Agregar_btn;
         private TableLayoutPanel tableLayoutPanel3;
         private Label No;
         private TextBox Buscar_tb;
+        private Label label1;
     }
 }
