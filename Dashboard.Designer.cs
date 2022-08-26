@@ -33,10 +33,10 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.Titulo = new System.Windows.Forms.Label();
             this.Agregar_btn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.No = new System.Windows.Forms.Label();
             this.Buscar_tb = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -114,6 +114,17 @@
             this.Agregar_btn.UseVisualStyleBackColor = false;
             this.Agregar_btn.Click += new System.EventHandler(this.Agregar_btn_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Location = new System.Drawing.Point(491, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(238, 73);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Da doble clic sobre una tarjeta para editarla.";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 2;
@@ -156,17 +167,6 @@
             this.Buscar_tb.Size = new System.Drawing.Size(712, 27);
             this.Buscar_tb.TabIndex = 4;
             this.Buscar_tb.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(491, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(238, 73);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Da doble clic sobre una tarjeta para editarla.";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Agenda_fm
             // 
