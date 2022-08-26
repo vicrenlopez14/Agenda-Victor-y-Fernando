@@ -32,6 +32,7 @@
             this.Telefono_tb = new System.Windows.Forms.Label();
             this.Nombre_tb = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.SubirFoto_btn = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.Eliminar_btn = new System.Windows.Forms.Button();
             this.Actualizar_btn = new System.Windows.Forms.Button();
@@ -58,7 +59,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.Picture_pb = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.SubirFoto_btn = new System.Windows.Forms.Button();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -133,6 +133,20 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // SubirFoto_btn
+            // 
+            this.SubirFoto_btn.BackColor = System.Drawing.Color.DarkCyan;
+            this.SubirFoto_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SubirFoto_btn.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SubirFoto_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.SubirFoto_btn.Location = new System.Drawing.Point(3, 363);
+            this.SubirFoto_btn.Name = "SubirFoto_btn";
+            this.SubirFoto_btn.Size = new System.Drawing.Size(154, 84);
+            this.SubirFoto_btn.TabIndex = 6;
+            this.SubirFoto_btn.Text = "Subir foto";
+            this.SubirFoto_btn.UseVisualStyleBackColor = false;
+            this.SubirFoto_btn.Click += new System.EventHandler(this.SubirFoto_btn_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -502,20 +516,6 @@
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel11.Size = new System.Drawing.Size(200, 100);
             this.tableLayoutPanel11.TabIndex = 0;
-            // 
-            // SubirFoto_btn
-            // 
-            this.SubirFoto_btn.BackColor = System.Drawing.Color.DarkCyan;
-            this.SubirFoto_btn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SubirFoto_btn.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SubirFoto_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SubirFoto_btn.Location = new System.Drawing.Point(3, 363);
-            this.SubirFoto_btn.Name = "SubirFoto_btn";
-            this.SubirFoto_btn.Size = new System.Drawing.Size(154, 84);
-            this.SubirFoto_btn.TabIndex = 6;
-            this.SubirFoto_btn.Text = "Subir foto";
-            this.SubirFoto_btn.UseVisualStyleBackColor = false;
-            this.SubirFoto_btn.Click += new System.EventHandler(this.SubirFoto_btn_Click);
             // 
             // ManipularContactoForm
             // 
