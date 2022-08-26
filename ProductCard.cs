@@ -24,11 +24,13 @@ namespace Paneles_VictorLopez_2A
         }
         private void LoadData()
         {
+
             Nombre_tb.Text = contact.Nombre;
             Direccion_tb.Text = contact.Dirección;
             Telefono_tb.Text = contact.Teléfono;
             Email_tb.Text = contact.Email;
             Pais_tb.Text = contact.País;
+            Picture_pb.Image = ByteToImage(contact.Foto);
         }
 
         private void ProductCard_Load(object sender, EventArgs e)
@@ -39,6 +41,16 @@ namespace Paneles_VictorLopez_2A
         private void ContactCard_DoubleClick(object sender, EventArgs e)
         {
             new ManipularContactoForm(contact).ShowDialog();
+        }
+
+        public static Bitmap ByteToImage(byte[] blob)
+        {
+            MemoryStream mStream = new MemoryStream();
+            byte[] pData = blob;
+            mStream.Write(pData, 0, Convert.ToInt32(pData.Length));
+            Bitmap bm = new Bitmap(mStream, false);
+            mStream.Dispose();
+            return bm;
         }
     }
 }

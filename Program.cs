@@ -8,8 +8,15 @@ namespace _2A_Agenda_Victor_Fernando
         [STAThread]
         static void Main()
         {
-            MySimpleConnection.Services.MySimpleConnection.Init("root", "localhost", "agenda", "3306");
-
+            try
+            {
+                MySimpleConnection.Services.MySimpleConnection.Init("root", "localhost", "agenda", "3306");
+            }
+            catch
+            {
+                // Stop the program
+                Environment.Exit(0);
+            }
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();

@@ -10,15 +10,17 @@ namespace _2A_Agenda_Victor_Fernando
         }
 
         private void Agenda_fm_Load(object sender, EventArgs e)
-        {
-            var productos = Contacto.LeerProductosAsProducto();
+        => CargarTarjetas(Contacto.LeerContactosAsProducto());
 
-            foreach (var producto in productos)
+
+        public void CargarTarjetas(List<Contacto> contacts)
+        {
+            foreach (var contactito in contacts)
             {
 
-                var productCard = new ContactCard(producto);
+                var contactCard = new ContactCard(contactito);
 
-                Contactos_ListView.Controls.Add(productCard);
+                Contactos_ListView.Controls.Add(contactCard);
 
             }
         }
@@ -32,5 +34,8 @@ namespace _2A_Agenda_Victor_Fernando
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        => CargarTarjetas(Contacto.LeerContactosBuscadosAsContacto(Buscar_tb.Text));
     }
 }

@@ -50,6 +50,7 @@ namespace _2A_Agenda_Victor_Fernando
             Teléfono_txt.Text = toManipulate.Teléfono;
             Email_txt.Text = toManipulate.Email;
             País_cb.Text = toManipulate.País;
+            Picture_pb.Image = ByteToImage(toManipulate.Foto);
         }
 
 
@@ -92,6 +93,16 @@ namespace _2A_Agenda_Victor_Fernando
                 MessageBox.Show("Contacto eliminado exitosamente");
                 this.Close();
             }
+        }
+
+        public static Bitmap ByteToImage(byte[] blob)
+        {
+            MemoryStream mStream = new MemoryStream();
+            byte[] pData = blob;
+            mStream.Write(pData, 0, Convert.ToInt32(pData.Length));
+            Bitmap bm = new Bitmap(mStream, false);
+            mStream.Dispose();
+            return bm;
         }
     }
 }
